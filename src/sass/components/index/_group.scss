@@ -1,0 +1,152 @@
+section#group {
+      overflow-x: hidden;
+      height: auto;
+
+      padding: rem(100px) 0;
+
+      .bg-group {
+            border-top-right-radius: 160px;
+            border-bottom-right-radius: 10px;
+            min-height: 100vh;
+
+            @include mediaQueryMax(xs) {
+                  min-height: 90vh;
+            }
+
+            background: url('../../public/images/01-group-page/group-hero.jpg') no-repeat center center/ cover;
+            position: relative;
+     
+
+            &::after {
+                  content: "";
+                  display: block;
+                  background-color: transparent;
+                  border: rem(50px) solid #12891c39;
+
+                  @include radius(80px);
+                  @include rotate(-45deg);
+                  width: 330px;
+                  height: 330px;
+                  position: absolute;
+                  z-index: 0;
+                  right: 200px;
+                  bottom: 50px;
+
+            }
+
+            .grid-group-white {
+                  display: grid;
+                  grid-template-columns: repeat(6, 1fr);
+                  grid-template-rows: repeat(13, 1fr);
+                  grid-gap: 20px;
+                  position: absolute;
+                  bottom: 50px;
+                  left: 150px;
+                  z-index: 12;
+
+                  span {
+                        display: inline-block;
+                        background-color: white;
+                        @include radius(50%);
+                        width: 7px;
+                        height: 7px;
+                        border: none;
+                  }
+
+            }
+
+            .grid-group {
+                  display: grid;
+                  grid-template-columns: repeat(6, 1fr);
+                  grid-template-rows: repeat(13, 1fr);
+                  grid-gap: 10px;
+                  position: absolute;
+                  bottom: 0px;
+                  right: -70px;
+                  z-index: -100;
+
+                  span {
+                        display: inline-block;
+                        background-color: #00723737;
+                        @include radius(50%);
+                        width: 5px;
+                        height: 5px;
+                        border: none;
+                  }
+
+            }
+      }
+
+
+
+      .paginative {
+            position: absolute;
+            padding-top: rem(40px);
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            justify-content: space-between;
+            align-self: flex-end;
+
+            .bulet {
+                  margin: 0 5px;
+                  width: 10px;
+                  height: 10px;
+                  border: 2px solid $primary-color;
+                  background-color: transparent;
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+            }
+
+            .next i,
+            .prev i {
+                  color: $primary-color;
+
+            }
+
+            .bulet-active {
+                  background-color: $primary-color !important;
+            }
+      }
+
+
+
+}
+
+/* change the size of the bullet and active color */
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: rgb(0, 255, 51);
+      opacity: 1;
+}
+
+/* target all bullets */
+.swiper-pagination-bullet {
+      background-color: red;
+      opacity: 1;
+}
+
+.swiper-pagination-bullet {
+      background-color: rgb(32, 34, 32);
+      display: inline-block;
+      margin: 0 rem(5px);
+      width: 8px;
+      height: 8px;
+}
+
+/* change color of next 2 bullets in sequence to white*/
+
+.swiper-pagination-bullet-active-next,
+.swiper-pagination-bullet-active-next-next {
+      background-color: rgb(14, 255, 62);
+}
+
+/* change color of previous bullet to white*/
+
+.swiper-pagination-bullet-active-prev {
+      background-color: rgb(17, 255, 25);
+}

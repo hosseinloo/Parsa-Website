@@ -1,0 +1,245 @@
+.mag-grid-1 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      grid-gap: 13px;
+      position: absolute;
+      top: 10px;
+      right: -50px;
+
+      // z-index: -100;
+      span {
+            display: inline-block;
+            background-color: #0072375a;
+            @include radius(50%);
+            width: 6px;
+            height: 6px;
+            border: none;
+      }
+}
+
+.mag-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      grid-gap: 13px;
+      position: absolute;
+      bottom: 10px;
+      right: -50px;
+
+      // z-index: -100;
+      span {
+            display: inline-block;
+            background-color: #0072375a;
+            @include radius(50%);
+            width: 6px;
+            height: 6px;
+            border: none;
+      }
+}
+
+.mag-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      grid-gap: 13px;
+      position: absolute;
+      top: 45%;
+      right: -50px;
+
+      // z-index: -100;
+      span {
+            display: inline-block;
+            background-color: #0072375a;
+            @include radius(50%);
+            width: 6px;
+            height: 6px;
+            border: none;
+      }
+}
+
+.z-index-1 {
+      z-index: 10;
+      position: relative;
+}
+
+.mag-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+      grid-gap: 25px 40px;
+      position: absolute;
+      bottom: -60px;
+      right: 50%;
+      margin-right: rem(-250px);
+      z-index: -1;
+
+      span {
+            display: inline-block;
+            background-color: #0072375a;
+            @include radius(50%);
+            width: 8px;
+            height: 8px;
+            border: none;
+      }
+}
+
+.grid-contact-us {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      grid-gap: 15px 10px;
+      position: absolute;
+      top: -40px;
+      right: 20px;
+      z-index: -100;
+
+      span {
+            display: inline-block;
+            background-color: #00723757;
+            @include radius(50%);
+            width: 6px;
+            height: 6px;
+            border: none;
+      }
+}
+
+.grid-about-body {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      grid-gap: 16px 20px;
+      position: absolute;
+      bottom: -150px;
+      right: 70px;
+      z-index: 1;
+
+      span {
+            display: inline-block;
+            background-color: #0429114a;
+            @include radius(50%);
+            width: 6px;
+            height: 6px;
+            border: none;
+      }
+}
+
+.grid-about-right {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      grid-gap: 20px 20px;
+      position: absolute;
+      bottom: 20px;
+      right: 50px;
+      z-index: -1;
+
+      span {
+            display: inline-block;
+            background-color: #00722872;
+            @include radius(50%);
+            width: 6px;
+            height: 6px;
+            border: none;
+      }
+}
+
+.grid-about-center {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      grid-gap: 20px 30px;
+      position: absolute;
+      top: 170px;
+      left: -130px;
+      z-index: 1;
+
+      span {
+            display: inline-block;
+            background-color: #019635ea;
+            @include radius(50%);
+            width: 8px;
+            height: 8px;
+            border: none;
+      }
+}
+
+.grid-brand-left {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      grid-gap: 20px 25px;
+      position: absolute;
+      bottom: 130px;
+      left: -120px;
+      z-index: -1;
+
+      span {
+            display: inline-block;
+            background-color: #019635c4;
+            @include radius(50%);
+            width: 7px;
+            height: 7px;
+            border: none;
+      }
+}
+
+.grid-representatives {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      grid-gap: 20px 14px;
+      position: absolute;
+      bottom: -30px;
+      right: 20px;
+      z-index: -1;
+
+      span {
+            display: inline-block;
+            background-color: #00723757;
+            @include radius(50%);
+            width: 6px;
+            height: 6px;
+            border: none;
+      }
+}
+
+.grid-companies {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      grid-gap: 25px 20px;
+      position: absolute;
+      bottom: -150px;
+      left: -60px;
+      z-index: -1;
+
+      span {
+            display: inline-block;
+            background-color: #0072378e;
+            @include radius(50%);
+            width: 6px;
+            height: 6px;
+            border: none;
+      }
+}
+
+.grid-companies-brand {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      grid-gap: 20px 20px;
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      z-index: 1;
+
+      span {
+            display: inline-block;
+            background-color: #ffffffd5;
+            @include radius(50%);
+            width: 6px;
+            height: 6px;
+            border: none;
+      }
+}

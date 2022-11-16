@@ -1,0 +1,117 @@
+//Start Font
+@mixin googleFont($name) {
+    @import url("https://fonts.googleapis.com/css2?family=#{$name}&display=swap");
+}
+
+// Start Media Query Min
+@mixin mediaQuery($size) {
+    @if $size==xxl {
+        @media (min-width: 1400px) {
+            @content;
+        }
+    }
+
+    @else if $size==xl {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+
+    @else if $size==lg {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $size==md {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $size==sm {
+        @media (min-width: 576px) {
+            @content;
+        }
+    }
+
+    @else if $size==xs {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+}
+
+
+// Start Media Query Max
+@mixin mediaQueryMax($size) {
+    @if $size==xxl {
+        @media (max-width: 1400px) {
+            @content;
+        }
+    }
+
+    @else if $size==xl {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @else if $size==lg {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $size==md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $size==sm {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+
+    @else if $size==xs {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+}
+
+// Start Animation
+@mixin animation($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+// Start Border Radius
+@mixin radius($size: 5px) {
+    border-radius: $size !important;
+    -webkit-border-radius: $size !important;
+    -moz-border-radius: $size !important;
+    -ms-border-radius: $size !important;
+    -o-border-radius: $size !important;
+}
+
+// Start Rotate
+@mixin rotate($size: 0px) {
+    transform: rotate($size);
+    -webkit-transform: rotate($size);
+    -moz-transform: rotate($size);
+    -ms-transform: rotate($size);
+    -o-transform: rotate($size);
+}
+
+// Start Scale
+@mixin scale($size: 1) {
+    transform: scale($size);
+    -webkit-transform: scale($size);
+    -moz-transform: scale($size);
+    -ms-transform: scale($size);
+    -o-transform: scale($size);
+}

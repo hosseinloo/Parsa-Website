@@ -1,0 +1,59 @@
+section#mainHero {
+      .agent-hero {
+            background: url('../../public/images/06-agent-page/agent-background.jpg') no-repeat center center/ cover !important;
+
+            .brand-logo {
+                  width: 150px;
+                  height: auto;
+                  position: absolute;
+                  left: 40px;
+                  top: -60px;
+
+                  @include mediaQuery(md) {
+                        width: 200px;
+                        position: absolute;
+                        left: 20px;
+                        top: -60px;
+                  }
+
+                  @include mediaQuery(lg) {
+                        left: 150px;
+                  }
+
+                  img {
+                        border-bottom-right-radius: 30px !important;
+                  }
+
+            }
+
+            .brand-title {
+                  background-color: $white;
+                  padding: rem(10px) rem(30px);
+
+                  @include radius(5px);
+                  border-top-left-radius: 25px !important;
+                  font-weight: bold;
+                  position: absolute;
+                  width: 350px;
+
+                  @include mediaQueryMax(md) {
+                        padding: rem(10px) rem(15px);
+
+                        h3 {
+
+                              font-size: rem(18px) !important;
+                        }
+                  }
+
+                  right: 0;
+                  top: 130px;
+
+                  @include mediaQuery(md) {
+                        right: -20px;
+                        padding: rem(20px) rem(50px);
+
+                  }
+
+            }
+      }
+}

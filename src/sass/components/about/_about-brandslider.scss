@@ -1,0 +1,31 @@
+section#brandCompany {
+      .brand-slider {
+            background-color: white;
+            @include radius(25px);
+            text-align: center;
+            width: 200px;
+            height: 210px;
+            padding: rem(20px) 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+
+            &:hover {
+                  box-shadow: 3px 3px 13px #c2c1c1 !important;
+                  @extend .transition-3;
+            }
+
+            img {
+                  max-width: 100%;
+                  border-top-right-radius: rem(20px);
+                  border-top-left-radius: rem(20px);
+            }
+
+            h6 {
+                  padding: rem(12px) 10px;
+                  margin-bottom: 0;
+            }
+      }
+}

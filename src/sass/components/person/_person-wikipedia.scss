@@ -1,0 +1,114 @@
+section#wikipediaOfPerson {
+      min-height: 100vh;
+      background-color: $gray;
+      align-items: center;
+      display: flex;
+      margin-top: rem(-20px);
+
+
+
+
+      button.on-wiki {
+            color: $white !important;
+            background-color: $primary-color !important;
+            transition: all .3s linear;
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            box-shadow: 0.4px 0.9px 1px 0.25rem rgba(5, 99, 27, 0.054);
+      }
+
+
+
+      .btn-wiki {
+            margin-top: 20px;
+            width: 100%;
+            background-color: $white !important;
+            color: $primary-color !important;
+            border: 1px solid $primary-color;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+
+            i {
+                  margin-right: rem(10px);
+
+                  &:hover {
+                        color: white !important;
+                  }
+            }
+
+            &:focus {
+                  color: $white !important;
+                  background-color: $primary-color !important;
+                  border-color: $primary-color !important;
+                  box-shadow: 0 0 0 0.15rem #0144194c;
+            }
+
+            &:hover {
+                  color: $white !important;
+                  background-color: $primary-color !important;
+                  transition: all .3s linear;
+                  -webkit-transition: all .3s linear;
+                  -moz-transition: all .3s linear;
+                  -ms-transition: all .3s linear;
+                  -o-transition: all .3s linear;
+                  box-shadow: 0 0 0 0.15rem #0036144a;
+
+            }
+
+      }
+
+      .person-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .person-card-item {
+                  &::after {
+                        content: "";
+                        display: block;
+                        background-color: transparent;
+                        border: rem(40px) solid #442d8224;
+                        opacity: .8;
+                        @include radius(80px);
+                        @include rotate(-45deg);
+                        width: 350px;
+                        height: 350px;
+                        position: absolute;
+                        z-index: -1;
+                        right: -110px;
+                        bottom: 120px;
+
+                  }
+
+                  @include mediaQuery(lg) {
+                        width: 30% !important;
+                        position: absolute;
+                        top: -60px;
+                        left: 16%;
+                        z-index: 200;
+                  }
+            }
+
+            img.person-img {
+                  border-radius: 20px;
+                  -webkit-border-radius: 20px;
+                  -moz-border-radius: 20px;
+                  -ms-border-radius: 20px;
+                  -o-border-radius: 20px;
+
+
+            }
+
+            h5 {
+                  background-color: white;
+                  padding: rem(30px);
+
+            }
+      }
+
+}

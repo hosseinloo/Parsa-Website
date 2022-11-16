@@ -1,0 +1,104 @@
+main#mainContact {
+      margin-top: rem(150px);
+
+      section#contactUs {
+            .bg-contact {
+                  background: url('../../public/images/07-contact-page/map.jpg') no-repeat top right/ cover !important;
+                  min-height: 100vh;
+                  border-top-right-radius: 170px;
+                  border-bottom-right-radius: 15px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+
+                  .address-container {
+                        width: 90%;
+
+                        @include mediaQueryMax(md) {
+                              width: 100%;
+                              padding: rem(25px) 0;
+                              margin-top: 30px;
+                        }
+
+                        padding: rem(25px);
+                  }
+
+                  form {
+                        flex-basis: 50%;
+                        padding: rem(30px) rem(10px);
+                        background-color: white;
+                        @include radius(16px);
+
+                        label {
+                              @extend .t-14;
+                              color: gray;
+                        }
+
+                        input,
+                        textarea {
+                              background-color: $white;
+                              border-top-left-radius: rem(25px);
+                        }
+
+                        input {
+                              padding: rem(10px) rem(5px);
+                        }
+
+                        textarea {
+                              resize: none;
+                        }
+
+                        button {
+                              i {
+                                    &:hover {
+                                          color: $white !important;
+                                    }
+                              }
+                        }
+                  }
+
+                  .location-tel {
+
+                        flex-basis: 40%;
+
+                        padding: rem(30px);
+                        background-color: white;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        @include mediaQuery(md) {
+                              margin-top: auto !important;
+                              margin-right: rem(20px);
+
+
+                        }
+
+                        i {
+                              display: inline-block;
+                              color: $primary-color;
+                              margin: 0 rem(10px);
+                        }
+
+                        .grid-contact {
+                              margin: auto rem(5px);
+                              display: grid;
+                              grid-template-columns: repeat(3, 4px);
+                              grid-template-rows: repeat(2, 4px);
+                              grid-gap: 3px;
+                              grid-template-areas:
+                                    ", , ,"
+                                    ", , ,"
+                              ;
+
+                              span {
+                                    background-color: $primary-color;
+                                    @include radius(50%)
+                              }
+                        }
+                  }
+
+            }
+      }
+}

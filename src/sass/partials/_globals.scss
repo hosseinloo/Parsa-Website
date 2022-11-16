@@ -1,0 +1,843 @@
+// google font include
+@include googleFont('Ubuntu');
+
+// global style
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+.min-vh-80 {
+    min-height: 80vh;
+}
+
+#loader {
+    display: none;
+}
+
+body {
+    font-family: 'ubuntu';
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+    transition: scroll-behavior 1s ease-out;
+    // overflow-x: hidden;
+    scrollbar-width: 12px;
+    scrollbar-color: $primary-color $gray;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $gray;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $primary-color;
+        border-radius: 5px;
+        border: 3px solid $primary-color;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+}
+
+.img-main {
+    @include mediaQuery(lg) {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.header-styles {
+    background: linear-gradient(120deg, #ffffff, #ffffff) !important;
+    border-bottom-right-radius: rem(25px);
+    border-bottom-left-radius: rem(25px);
+    // padding: rem(20px) 0;
+    height: 90px !important;
+    transition: all .6s linear;
+    padding-bottom: rem(20px);
+
+}
+
+.margin {
+    margin-bottom: -50px;
+}
+
+// Start Vertical line in Page
+///////////////////////////////////////////////////////////////
+
+.vertical-line-1 {
+    width: 1px;
+    // max-height: 100% !important;
+    background-color: #00723745;
+    position: absolute;
+    right: 3%;
+    z-index: -1000;
+}
+
+.vertical-line-2 {
+    width: 1px;
+    // max-height: 100% !important;
+    background-color: #00723739;
+    position: absolute;
+    right: 45%;
+    z-index: -1000;
+
+}
+
+.circle-v {
+    width: 8px;
+    height: 8px;
+    @include radius(50%);
+    background-color: #00723793;
+    position: absolute;
+    left: 0;
+    z-index: -999;
+    margin-left: rem(-4px);
+
+    @include animation(circle-zoom) {
+        0% {
+            @include scale(1);
+
+        }
+
+        50% {
+            @include scale(1.2);
+
+        }
+
+        100% {
+            @include scale(1);
+
+        }
+
+    }
+
+    animation: circle-zoom 3s ease-in 0s infinite;
+    -webkit-animation: circle-zoom 3s ease-in 1s infinite;
+
+    &::after {
+        width: 15px;
+        height: 15px;
+        content: "";
+        background-color: transparent;
+        border: 2px solid #00723778;
+        @include radius(50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -7.5px;
+        margin-left: -7.5px;
+
+    }
+
+    &::before {
+        width: 22px;
+        height: 22px;
+        content: "";
+        background-color: transparent;
+        border: 2px solid #00723736;
+        @include radius(50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -11px;
+        margin-left: -11px;
+
+    }
+}
+
+.v-rep-1 {
+    top: 100px;
+    bottom: 0px;
+}
+
+.v-rep-2 {
+    top: -100px;
+    bottom: 0px;
+}
+
+.v-index-1 {
+    top: 500px;
+    bottom: 100px;
+
+    .circle-1 {
+        top: 4%;
+    }
+
+    .circle-2 {
+        top: 8%;
+    }
+
+    .circle-3 {
+        top: 19%;
+    }
+
+    .circle-4 {
+        top: 33%;
+    }
+
+    .circle-5 {
+        top: 51%;
+    }
+
+    .circle-6 {
+        top: 66%;
+    }
+
+    .circle-7 {
+        top: 68%;
+    }
+}
+
+.v-index-2 {
+    right: 40% !important;
+
+    top: 0px;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 7%;
+    }
+
+    .circle-2 {
+        top: 14%;
+    }
+
+    .circle-3 {
+        top: 26%;
+    }
+
+    .circle-4 {
+        top: 45%;
+    }
+
+    .circle-5 {
+        top: 56%;
+    }
+
+    .circle-6 {
+        top: 70%;
+    }
+
+    .circle-7 {
+        top: 82%;
+    }
+
+    .circle-8 {
+        top: 98%;
+    }
+
+}
+
+.v-art-1 {
+    top: 0px;
+    right: 15px !important;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 55%;
+    }
+
+    .circle-2 {
+        top: 65%;
+    }
+}
+
+.v-art-2 {
+    right: 42% !important;
+
+    top: 0px;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 90%;
+    }
+}
+
+.v-video-1 {
+    top: 0px;
+    right: 30px !important;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 40%;
+    }
+
+    .circle-2 {
+        top: 47%;
+    }
+
+    .circle-3 {
+        top: 75%;
+    }
+}
+
+.v-video-2 {
+    right: 42% !important;
+
+    top: 0px;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 45%;
+    }
+
+    .circle-2 {
+        top: 87%;
+    }
+}
+
+.v-mag-1 {
+    top: 0px;
+    right: 35px !important;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 30%;
+    }
+
+    .circle-2 {
+        top: 36%;
+    }
+
+    .circle-3 {
+        top: 60%;
+    }
+
+    .circle-4 {
+        top: 90%;
+    }
+}
+
+.v-mag-2 {
+    right: 42% !important;
+
+    top: 0px;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 55%;
+    }
+
+    .circle-2 {
+        top: 92%;
+    }
+}
+
+.v-contact-1 {
+    top: 400px;
+    right: 35px !important;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 10%;
+    }
+
+    .circle-2 {
+        top: 46%;
+    }
+
+    .circle-3 {
+        top: 60%;
+    }
+
+    .circle-4 {
+        top: 90%;
+    }
+}
+
+.v-contact-2 {
+    right: 42% !important;
+
+    top: 0px;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 55%;
+    }
+
+    .circle-2 {
+        top: 92%;
+    }
+}
+
+.v-group-1 {
+    top: 490px;
+    right: 60px !important;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 4%;
+    }
+
+    .circle-2 {
+        top: 30%;
+    }
+}
+
+.v-group-2 {
+    right: 42% !important;
+
+    top: 0px;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 27%;
+    }
+
+    .circle-2 {
+        top: 85%;
+    }
+}
+
+.v-about-1 {
+    right: 60px !important;
+
+    top: 740px;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 1%;
+    }
+
+    .circle-2 {
+        top: 5%;
+    }
+
+    .circle-3 {
+        top: 17%;
+    }
+
+    .circle-4 {
+        top: 36%;
+    }
+
+    .circle-5 {
+        top: 43%;
+    }
+
+    .circle-6 {
+        top: 68%;
+    }
+
+    .circle-7 {
+        top: 74%;
+    }
+}
+
+.v-about-2 {
+    right: 43% !important;
+
+    top: 0px;
+    bottom: 50px;
+
+    .circle-1 {
+        top: 22%;
+    }
+
+    .circle-2 {
+        top: 44%;
+    }
+
+    .circle-3 {
+        top: 57%;
+    }
+
+    .circle-4 {
+        top: 67%;
+    }
+
+    .circle-5 {
+        top: 98%;
+    }
+
+}
+
+.v-person-1 {
+    top: 510px;
+    right: 45px !important;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 1%;
+    }
+
+    .circle-2 {
+        top: 15%;
+    }
+
+    .circle-3 {
+        top: 30%;
+    }
+
+    .circle-4 {
+        top: 84%;
+    }
+
+}
+
+.v-person-2 {
+    right: 42% !important;
+
+    top: 0px;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 18%;
+    }
+
+    .circle-2 {
+        top: 97%;
+    }
+}
+
+.v-brand-1 {
+    top: 600px;
+    right: 65px !important;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 10%;
+    }
+
+    .circle-2 {
+        top: 25%;
+    }
+
+    .circle-3 {
+        top: 70%;
+    }
+}
+
+.v-brand-2 {
+    right: 42% !important;
+
+    top: 0px;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 80%;
+    }
+}
+
+.v-company-1 {
+    top: 200px;
+    right: 45px !important;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 25%;
+    }
+
+    .circle-2 {
+        top: 40%;
+    }
+
+    .circle-3 {
+        top: 74%;
+    }
+}
+
+.v-company-2 {
+    right: 44% !important;
+
+    top: 0px;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 23%;
+    }
+
+    .circle-2 {
+        top: 45%;
+    }
+
+    .circle-3 {
+        top: 70%;
+    }
+}
+
+.v-agent-1 {
+    top: 600px;
+    right: 75px !important;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 5%;
+    }
+
+    .circle-2 {
+        top: 17%;
+    }
+
+    .circle-3 {
+        top: 44%;
+    }
+
+    .circle-4 {
+        top: 80%;
+    }
+}
+
+.v-agent-2 {
+    right: 44% !important;
+
+    top: 0px;
+    bottom: 0px;
+
+    .circle-1 {
+        top: 55%;
+    }
+
+    .circle-2 {
+        top: 82%;
+    }
+
+    .circle-3 {
+        top: 94%;
+    }
+}
+
+
+// End Vertical line in Page
+////////////////////////////////////
+
+
+
+
+
+.w-300 {
+    width: 400px;
+    height: auto;
+
+    @include mediaQueryMax(sm) {
+        width: 350px;
+        height: auto;
+    }
+}
+
+.bg-main {
+    background-color: #dce0e045;
+}
+
+.p-top {
+    padding-top: 60px;
+}
+.w-100p {
+    width: 150px !important;
+}
+
+.transition-5 {
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+}
+
+.edit-title {
+    @include mediaQuery(lg) {
+        width: 550px !important;
+    }
+}
+
+.ml-manfi {
+    @include mediaQuery(lg) {
+        margin-right: -650px;
+
+    }
+}
+.bold {
+    font-weight: bold;
+}
+
+.bg-grays {
+    background-color: rgb(245, 245, 245) !important;
+}
+
+.bg-gray {
+    background-color: $gray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.transition-3 {
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.text-normal {
+    font-weight: normal !important;
+}
+
+
+
+.t-18 {
+    font-size: rem(18px);
+    font-weight: normal;
+    line-height: 1.5 !important;
+    text-align: justify;
+    // color: #212221;
+}
+
+.t-16 {
+    font-size: rem(16px);
+    font-weight: normal;
+    line-height: 1.5 !important;
+    // text-align: justify;
+    color: #212221;
+}
+
+.t-14 {
+    font-size: rem(14px);
+    font-weight: normal;
+    line-height: 1.5 !important;
+    // text-align: justify;
+    color: #4e514e;
+}
+
+.t-justify {
+    text-align: justify;
+    line-height: 1.7;
+    color: rgb(115, 118, 115);
+}
+
+.t-12 {
+    font-size: rem(12px);
+    font-weight: normal;
+    line-height: 1.2 !important;
+    // text-align: justify;
+    color: #d3d3d3;
+}
+
+.mtop {
+    margin-top: 130px;
+}
+
+.c-style {
+    overflow-x: auto;
+    z-index: 1000;
+}
+
+.height-80 {
+    min-height: 80vh;
+}
+
+.text-purple {
+    color: $complement-color;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bg-green {
+    background-color: $primary-color !important;
+}
+
+.text-green {
+    color: $primary-color !important;
+}
+
+.text-green-light {
+    color: #08d36a !important;
+}
+
+.justify-text {
+    line-height: 2;
+    text-align: justify;
+}
+
+i {
+
+    cursor: pointer !important;
+    display: inline-block;
+
+    &:hover {
+        transition: all .4s linear;
+        -webkit-transition: all .4s linear;
+        -moz-transition: all .4s linear;
+        -ms-transition: all .4s linear;
+        -o-transition: all .4s linear;
+        color: $font !important;
+
+    }
+}
+
+.margin-top {
+    margin-top: 150px;
+
+    @include mediaQuery(lg) {
+        margin-top: 0;
+    }
+}
+
+.prev-btn,
+.next-btn {
+    transition: all .4s linear;
+}
+
+
+
+/* change the size of the bullet and active color */
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: rgb(0, 255, 51);
+    opacity: 1;
+}
+
+/* target all bullets */
+.swiper-pagination-bullet {
+    background-color: red;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgb(32, 34, 32);
+    display: inline-block;
+    margin: 0 rem(5px);
+    width: 8px;
+    height: 8px;
+}
+
+/* change color of next 2 bullets in sequence to white*/
+
+.swiper-pagination-bullet-active-next,
+.swiper-pagination-bullet-active-next-next {
+    background-color: rgb(14, 255, 62);
+}
+
+/* change color of previous bullet to white*/
+
+.swiper-pagination-bullet-active-prev {
+    background-color: rgb(17, 255, 25);
+}
+
+
+// Font
+@font-face {
+    font-family: "vazir";
+    src: url("../../public/fonts/vazir.ttf");
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url("../../public/fonts/ubuntu.ttf");
+}

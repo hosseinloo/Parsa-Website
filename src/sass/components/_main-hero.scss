@@ -1,0 +1,91 @@
+section#mainHero {
+      .hero-content {
+            min-height: 80vh;
+            margin-top: rem(150px);
+
+            @include radius(10px);
+            border-top-right-radius: rem(120px) !important;
+            position: relative;
+
+            .brand-logo {
+                  width: 250px;
+                  height: auto;
+                  position: absolute;
+                  left: 20px;
+                  top: -50px;
+
+                  @include mediaQuery(xl) {
+                        left: 150px;
+                  }
+
+                  img {
+                        border-bottom-right-radius: 30px !important;
+                  }
+
+            }
+
+            .brand-title {
+                  background-color: $white;
+                  padding: rem(20px) rem(50px);
+                  @include radius(5px);
+                  border-top-left-radius: 25px !important;
+                  font-weight: bold;
+                  position: absolute;
+                  right: 0;
+                  top: 130px;
+
+                  @include mediaQuery(md) {
+                        right: -20px;
+                  }
+
+            }
+
+            .brand-body {
+                  padding: rem(50px) rem(30px);
+                  background-color: $white;
+
+                  @include radius(10px);
+                  position: absolute;
+                  bottom: -300px;
+                  left: 0px;
+                  right: 0px;
+                  width: 100%;
+
+                  @include mediaQuery(sm) {
+                        width: 70%;
+                        bottom: -300px;
+                        right: 50px;
+                  }
+
+                  @include mediaQuery(md) {
+                        width: 500px;
+                        padding: rem(50px) rem(40px);
+                        height: auto;
+                        bottom: -300px;
+                        right: 70px;
+                  }
+
+                  @include mediaQuery(xl) {
+                        bottom: -300px;
+                  }
+
+
+                  .para-sup {
+                        margin-bottom: rem(10px);
+                  }
+
+                  h4 {
+                        margin-bottom: rem(40px);
+                  }
+
+                  button {
+                        margin-right: auto;
+                        margin-top: rem(60px);
+                  }
+            }
+
+
+      }
+
+
+}

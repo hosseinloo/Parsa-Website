@@ -1,0 +1,250 @@
+section#companyProduct {
+      padding: rem(150px) 0;
+      background-color: $gray;
+
+      .company-product {
+            background: url('../../public/images/09-companies-page/company-structure.jpg') no-repeat center center/ cover;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 10px;
+
+            .brand-company {
+                  width: 100%;
+
+                  @include mediaQuery(lg) {
+                        width: 350px;
+
+                  }
+
+                  height: auto;
+                  background-color: #ffffff;
+                  display: flex;
+                  align-items: flex-start;
+                  justify-content: space-between;
+                  flex-direction: column;
+                  padding: rem(35px) rem(25px);
+                  @include radius(25px);
+
+                  .brand-slide {
+                        border: 1px solid transparent;
+                        background-color: $gray;
+                        @include radius(20px);
+                        padding: rem(15px) rem(12px);
+
+                        &:hover {
+                              @extend .transition-3;
+                              border: 1px solid $primary-color;
+
+                              a,
+                              i {
+                                    color: $primary-color !important;
+
+                              }
+                        }
+                  }
+
+                  .brand-name {
+                        img {
+                              @include radius(25px);
+                              margin-left: rem(8px);
+                        }
+
+                        h6 {
+                              margin-bottom: 0;
+                        }
+                  }
+            }
+
+            .feed {
+                  z-index: 200;
+            }
+
+            .feed-container {
+                  width: 100%;
+                  height: auto;
+                  padding: rem(20px) rem(20px) rem(70px) rem(20px);
+                  background-color: white;
+                  @include radius(25px);
+
+                  @include mediaQuery(md) {
+                        width: 80%;
+                        height: auto;
+                        padding: rem(20px) rem(20px) rem(40px) rem(20px);
+                        background-color: white;
+                        @include radius(25px);
+                  }
+
+                  .owl-prev-custom,
+                  .owl-next-custom {
+                        &:hover {
+                              color: #00ff5e !important;
+                        }
+                  }
+
+                  .owl-nav {
+                        margin-top: 30px;
+                  }
+
+                  .owl-dots {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .owl-dot.active {
+                              span {
+                                    background-color: #00ff5e !important;
+                              }
+                        }
+                  }
+
+                  .bulet {
+                        width: 8px;
+                        height: 8px;
+
+                        background-color: rgb(84, 93, 90);
+                        @include radius(50%);
+                        display: block;
+                        margin: 0 rem(4px);
+                  }
+
+                  &::after {
+                        content: "";
+                        display: block;
+                        background-color: transparent;
+                        border: rem(40px) solid #0072375a;
+                        opacity: .8;
+
+                        @include radius(80px);
+                        @include rotate(-45deg);
+                        width: 350px;
+                        height: 350px;
+                        position: absolute;
+                        z-index: -1;
+                        left: -40px;
+                        bottom: -20px;
+
+                  }
+
+                  .feed-product {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-template-rows: repeat(6, 1fr);
+                        grid-gap: 20px;
+                        grid-template-areas:
+                              "slide"
+                              "slide"
+                              "slide"
+                              "slide"
+                              "slide"
+                              "slide"
+                        ;
+
+                        @include mediaQuery(md) {
+
+                              display: grid;
+                              grid-template-columns: repeat(3, 1fr);
+                              grid-template-rows: repeat(2, 1fr);
+                              grid-gap: 20px;
+                              grid-template-areas:
+                                    "slide slide slide"
+                                    "slide slide slide"
+                              ;
+                        }
+
+
+
+                        .paginate {
+                              position: absolute;
+                              z-index: 100;
+                              bottom: 20px;
+                              left: 20px;
+                              right: 20px;
+
+                              .bulet {
+                                    width: 8px;
+                                    height: 8px;
+
+                                    background-color: rgb(84, 93, 90);
+                                    @include radius(50%);
+                                    display: block;
+                                    margin: 0 rem(4px);
+                              }
+
+                              .bulet-active {
+                                    background-color: rgb(83, 255, 83);
+                              }
+                        }
+
+                        .slide {
+                              cursor: pointer;
+                              @include radius(20px);
+                              display: flex;
+                              box-shadow: 0px 0px 7px rgba(198, 195, 195, 0.66);
+                              margin: rem(20px) rem(0px);
+
+                              @include mediaQuery(md) {
+                                    margin: rem(0px) rem(0px);
+                              }
+
+                              &:hover {
+                                    @extend .transition-3;
+                                    box-shadow: 3px 0px 7px rgba(179, 177, 177, 0.66);
+                              }
+
+                              flex-direction: column;
+
+                              img.feed-img {
+                                    width: 100%;
+                                    height: auto;
+                                    border-top-right-radius: 20px;
+                                    border-top-left-radius: 20px;
+
+
+                              }
+
+                              .slide-info {
+                                    padding: rem(20px) 10px;
+                                    background-color: rgb(236, 238, 236);
+                                    border-bottom-right-radius: 20px;
+                                    border-bottom-left-radius: 20px;
+
+                                    @include mediaQuery(md) {
+                                          padding: 10px;
+
+                                    }
+
+                                    span {
+                                          color: rgb(86, 90, 88) !important;
+
+                                    }
+
+                                    .icon {
+                                          background-color: #00ff5e;
+                                          width: 25px;
+                                          height: 25px;
+                                          @include radius(5px);
+
+                                          &:hover {
+                                                @extend .transition-3;
+                                                background-color: #565a58;
+
+                                                i {
+                                                      color: #00ff5e !important;
+
+                                                }
+
+                                          }
+
+                                          i {
+                                                display: inline-block;
+                                                color: rgb(86, 90, 88) !important;
+                                                @include rotate(45deg)
+                                          }
+                                    }
+                              }
+                        }
+                  }
+
+            }
+
+      }
+}

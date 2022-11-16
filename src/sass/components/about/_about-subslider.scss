@@ -1,0 +1,88 @@
+section#subCompany {
+      .sub-slider {
+            width: 300px;
+            height: auto;
+            background-color: white;
+            padding: rem(30px) rem(35px);
+            margin: rem(20px) rem(0px);
+            @include radius(20px);
+            box-shadow: none !important;
+            cursor: pointer;
+
+            &:hover {
+                  box-shadow: 3px 3px 13px #c2c1c1 !important;
+                  @extend .transition-3;
+
+                  h6 {
+                        color: $complement-color;
+                  }
+
+                  .icon {
+                        @extend .transition-3;
+                        background-color: $complement-color;
+
+                        i {
+                              color: white !important;
+
+                        }
+
+
+                  }
+
+            }
+
+            h6 {
+                  font-size: 20px !important;
+                  font-weight: bold !important;
+            }
+
+            em {
+                  font-size: 16px;
+                  margin-bottom: rem(20px);
+                  display: inline-block;
+
+            }
+
+            p {
+                  @extend .t-14;
+            }
+
+            img {
+                  width: 70px;
+                  height: auto;
+                  @include radius(10px);
+                  margin-bottom: rem(14px);
+            }
+
+
+            .icon {
+                  background-color: transparent;
+                  width: 30px;
+                  height: 30px;
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 1px solid $complement-color !important;
+                  cursor: pointer;
+                  @include radius(5px);
+
+                  &:hover {
+                        @extend .transition-3;
+                        background-color: $complement-color;
+
+                        i {
+                              color: white !important;
+
+                        }
+
+                  }
+
+                  i {
+                        display: inline-block;
+                        color: $complement-color !important;
+                        @include rotate(45deg)
+                  }
+            }
+      }
+}

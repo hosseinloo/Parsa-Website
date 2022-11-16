@@ -1,0 +1,142 @@
+section#about-us {
+      overflow-x: hidden;
+      max-width: 100%;
+      padding-bottom: rem(100px);
+      z-index: -200;
+
+
+      @include mediaQueryMax(xs) {
+            padding-top: rem(100px);
+            margin: rem(100px) 0;
+
+
+      }
+
+      @include mediaQuery(lg) {
+            padding-top: rem(150px);
+            padding-bottom: rem(150px);
+
+      }
+
+      .about-content {
+
+            @include mediaQuery(xl) {
+                  margin-top: rem(100px);
+            }
+      }
+
+      .about-img {
+            position: relative;
+
+            img {
+                  border-top-left-radius: 15%;
+
+
+                  @include mediaQuery(xl) {
+                        margin-right: rem(-25px);
+                        margin-top: rem(55px);
+                  }
+
+                  @include mediaQueryMax(xs) {
+                        margin-right: rem(-20px);
+                        margin-top: rem(40px);
+                  }
+
+                  @include mediaQuery(sm) {
+                        max-width: 100%;
+                        margin-right: rem(-20px);
+                        margin-top: rem(30px);
+                  }
+
+            }
+
+            &::after {
+                  content: "";
+                  display: block;
+                  background-color: transparent;
+                  border: rem(50px) solid #442d821f;
+
+                  @include radius(80px);
+                  @include rotate(-45deg);
+                  width: 330px;
+                  height: 330px;
+                  position: absolute;
+                  z-index: -100;
+                  left: 40px;
+                  top: -50px;
+
+            }
+
+            .grid-about-us {
+                  display: grid;
+                  grid-template-columns: repeat(6, 1fr);
+                  grid-template-rows: repeat(13, 1fr);
+                  grid-gap: 10px;
+                  position: absolute;
+                  bottom: -50px;
+                  left: 0;
+
+                  span {
+                        display: inline-block;
+                        background-color: #00723757;
+                        @include radius(50%);
+                        width: 5px;
+                        height: 5px;
+                        border: none;
+                  }
+
+            }
+      }
+
+      .video-player {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 50px;
+
+            span {
+                  cursor: pointer;
+            }
+
+            i {
+                  transition: all .3s linear;
+                  -webkit-transition: all .3s linear;
+                  -moz-transition: all .3s linear;
+                  -ms-transition: all .3s linear;
+                  -o-transition: all .3s linear;
+                  color: $white !important;
+
+                  &:hover {
+                        color: rgba(125, 247, 188, 0.775) !important;
+                        border-radius: 50%;
+                        box-shadow: 0px 0px 30px 10px rgba(21, 213, 120, 0.578);
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+
+                  }
+
+                  position: relative;
+                  z-index: 1000;
+
+                  &::after {
+                        content: "";
+                        height: rem(45px);
+                        width: rem(45px);
+                        background-color: $primary-color;
+                        display: block;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        position: absolute;
+                        left: -6px;
+                        bottom: -4px;
+                        z-index: -1;
+
+                  }
+            }
+      }
+}

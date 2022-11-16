@@ -1,0 +1,45 @@
+section#cta {
+      // min-height: 100vh;
+
+      background: linear-gradient(200deg, #1d1d1dde 5%, #fdfdfd2d), url('../../public/images/cta/cta.jpg') no-repeat fixed center /cover;
+
+
+
+      button.btn-purple.checked-cta-button {
+            color: $white !important;
+            background-color: $complement-color !important;
+            transition: all .3s linear;
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            box-shadow: 0 0 0 0.25rem rgba(61, 3, 148, 0.088);
+      }
+
+
+
+      button.btn-purple {
+            background-color: $white !important;
+            color: $complement-color !important;
+
+            &:focus {
+                  color: $white !important;
+                  background-color: $complement-color !important;
+                  border-color: $complement-color !important;
+                  box-shadow: 0 0 0 0.25rem rgba(61, 3, 148, 0.5);
+            }
+
+            &:hover {
+                  color: $white !important;
+                  background-color: $complement-color !important;
+                  transition: all .3s linear;
+                  -webkit-transition: all .3s linear;
+                  -moz-transition: all .3s linear;
+                  -ms-transition: all .3s linear;
+                  -o-transition: all .3s linear;
+                  box-shadow: 0 0 0 0.25rem rgba(61, 3, 148, 0.088);
+
+            }
+
+      }
+}

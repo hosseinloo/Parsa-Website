@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="form html css javascrip bootstrap programing test">
+    <meta name="description" content="create project">
+    <meta http-equiv="author" content="Hossein Ghorbanloo">
+    <meta http-equiv="refresh" content="200">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../dist/vendor/css/bootstrap/bootstrap.css">
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="../../dist/vendor/css/boxicons/css/boxicons.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="../../dist/vendor/css/swiper/swiper-bundle.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="../../dist/vendor/css/owl-carousel/owl.carousel.min.css">
+    <!-- Main File Css -->
+    <link rel="stylesheet" href="../../dist/css/main.css">
+    <!-- Title Style -->
+    <link rel="icon" href="../images/logo/logo.png">
+    <link rel="apple-touch-icon" href="../images/logo/logo.png">
+    <title>Parsa Advisory Group | Parsa Video</title>
+  </head>
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <body class="position-relative">
+
+  <!-- Start Header Section-->
+  <header id="header" class="w-100 px-lg-4 d-flex align-items-center">
+    <nav class="navbar navbar-light bg-transparent fixed-top overflow-hidden">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-start align-items-center flex-grow-1">
+          <a class="navbar-brand" href="#">
+            <img src="../images/logo/logo.png" alt="website logo picture" />
+          </a>
+          <ul class="navbar-nav navigation-menu me-lg-5 flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link active-menu" aria-current="page" href="#">صفحه اصلی</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">محصولات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">فرصت های همکاری</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">نمایندگی ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">اخبار</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">تماس با ما</a>
+            </li>
+          </ul>
+        </div>
+        <section class="d-lg-flex align-items-center justify-content-center d-none position-relative search-container">
+          <form class="align-self-center ms-lg-3">
+              <div class="form-group">
+                  <input type="search" class="form-control search-form " id="floatingInput" placeholder="جست و جو..." autocomplete="off">
+              </div>
+          </form>
+          <button type="button" class=" search-icon bg-transparent border-0">
+            <i class="bx bx-search bx-sm text-green ms-2"></i>
+          </button>
+          <section class="sales-advisor align-self-center ms-3">
+            <a href="#" class="text-decoration-none d-inline-block pe-2">مشاوره خرید</a>
+          </section>
+        </section>
+        <div class="ms-0" id="burger">
+          <i class="bx bx-menu bx-md text-green" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"></i>
+        </div>
+        <!-- menu in sidebar for width < 768px (off canvas) -->
+        <div class="offcanvas offcanvas-end pt-1" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+              <img src="../images/logo/logo.png" alt="website logo picture" />
+            </h5>
+            <i class="bx bx-x bx-lg text-green d-inline-block" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav pe-4">
+              <li class="nav-item py-3">
+                <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3" href="#">محصولات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3" href="#">فرصت های همکاری</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link py-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  نمایندگی ها
+                </a>
+                <ul class="dropdown-menu drop-nav" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">سمنان</a></li>
+                  <li><a class="dropdown-item" href="#">گیلان</a></li>
+                  <li><a class="dropdown-item" href="#">تبریز</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3" href="#">اخبار</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3" href="#">درباره ما</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3" href="#">تماس با ما</a>
+              </li>
+            </ul>
+            <hr />
+            <form class="mt-5">
+              <div class="form-group">
+                <input type="search" class="form-control" id="floatingInput" placeholder="جست و جو..." />
+              </div>
+            </form>
+            <section class="sales-advisor mt-4">
+              <a href="#" class="text-green text-decoration-none d-inline-block pe-2">مشاوره خرید</a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header Section -->
+
+    <!-- *********************************************** -->
+
+    <!-- Start Main -->
+    <main id="parsaMagVideo" class="position-relative">
+      <!-- Start Vertical Line in Document -->
+      <div class="vertical-line-1 v-video-1">
+        <div class="circle-v circle-1"></div>
+        <div class="circle-v circle-2"></div>
+        <div class="circle-v circle-3"></div>
+      </div>
+      <div class="vertical-line-2 v-video-2">
+        <div class="circle-v circle-1"></div>
+        <div class="circle-v circle-2"></div>
+      </div>
+      <!-- End Vertical Line in Document -->
+
+      <!-- *********************************************** -->
+
+      <!-- Start Body Video Mag -->
+      <div class="container-fluid margin-top">
+        <div class="row">
+          <!-- Start Sidebar Section -->
+          <aside class="col-12 col-md-4 col-xl-3 order-2 order-lg-1" id="sidebarTitle">
+            <h5 class="my-5 pe-3 text-green">عنوان های مرتبط</h5>
+
+            <div class="mag-box w-100 mx-auto">
+
+              <div class="box">
+                <div class="box-img">
+
+                  <img src="../images/product/pro01.jpg" class="img-fluid" alt="article picture in parsa group">
+
+                  <div class="box-info">
+                    <h5 class="box-title">عنوان</h5>
+                    <div class="box-body">
+                      <p class="box-text t-12">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        روزنامه و مجله در ستون و سطرآنچنان که لازم است .
+                      </p>
+                      <p class="box-icon">
+                        <i class='bx bx-left-arrow-alt bx-sm'></i>
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="box">
+                <div class="box-img">
+
+                  <img src="../images/product/pro02.jpg" class="img-fluid" alt="article picture in parsa group">
+
+                  <div class="box-info">
+                    <h5 class="box-title">عنوان</h5>
+                    <div class="box-body">
+                      <p class="box-text t-12">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        روزنامه و مجله در ستون و سطرآنچنان که لازم است .
+                      </p>
+                      <p class="box-icon">
+                        <i class='bx bx-left-arrow-alt bx-sm'></i>
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="box">
+                <div class="box-img">
+
+                  <img src="../images/product/pro03.jpg" class="img-fluid" alt="article picture in parsa group">
+
+                  <div class="box-info">
+                    <h5 class="box-title">عنوان</h5>
+                    <div class="box-body">
+                      <p class="box-text t-12">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        روزنامه و مجله در ستون و سطرآنچنان که لازم است .
+                      </p>
+                      <p class="box-icon">
+                        <i class='bx bx-left-arrow-alt bx-sm'></i>
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </aside>
+          <!-- End Sidebar Section -->
+
+          <!-- *********************************************** -->
+
+          <!-- Start Video Mag Structure Section -->
+          <section class="col-12 col-md-8 col-xl-9 main-podcast order-1 order-lg-2">
+            <div class="row ps-lg-5 bg-white">
+              <div class="col-12 d-flex align-items-center justify-content-between">
+                <header>
+                  <h2 class="text-green">عنوان صفحه</h2>
+                  <em><small>هفتم فروردین 1400 - 14:00</small></em>
+                </header>
+                <section class="point-conteiner d-flex flex-column align-items-end justify-content-end">
+                  <div class="like-save">
+                    <i class="bx bx-heart bx-sm text-green"></i>
+                    <i class="bx bx-save bx-sm text-green"></i>
+                  </div>
+                  <div class="star-container">
+                    <ul class="list-unstyled d-flex flex-row-reverse">
+                      <li><i class='bx bxs-star text-warning'></i></li>
+                      <li><i class='bx bxs-star text-warning'></i></li>
+                      <li><i class='bx bxs-star text-warning'></i></li>
+                      <li><i class='bx bxs-star text-warning'></i></li>
+                      <li><i class='bx bxs-star'></i></li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+              <div class="col-12 mt-5">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="video-container">
+                      <div class="mag-grid-3">
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                      </div>
+
+                      <video src="../video/person.mp4" controls class="video-player w-100"
+                        poster="../images/04-mag-page/background-parsamag.jpg" id="myVideo">
+                        <source media="" srcset="../video/person.mp4" sizes="">
+                      </video>
+                      <div class="video-title">
+                        <h5>عنوان ویدئو در این قسمت</h5>
+                        <p>زمان ویدئو: <span>30 دقیقه</span></p>
+                      </div>
+                      <button type="button" class="video-icon" id="play">
+                        <i class="bx bx-play bx-lg"></i>
+                      </button>
+                    </div>
+                    <section class="mag-paragraph ps-lg-5 pt-3 pt-lg-5 pe-2">
+                      <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد
+                        گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای
+                        طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد در این صورت می
+                        توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان
+                        مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                        استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                        طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                        شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای
+                        زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                        افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان
+                        فارسی ایجاد کرد در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط
+                        سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل
+                        دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                        صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                        سطرآنچنان که لازم است و برای شرایط فعلی موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و
+                        زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا
+                        مورد استفاده قرار گیرد.و برای شرایط فعلی موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و
+                        زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا
+                        مورد استفاده قرار گیرد. و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                        گیرد. و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                      </p>
+                    </section>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row bg-gray py-5 px-0 px-md-4 mt-lg-5 mt-3 comments">
+              <div class="col-12">
+                <section class="d-flex flex-column align-items-start justify-content-start w-100 comment-container">
+                  <h2 class="text-dark h4">نظرات کاربران</h2>
+                  <section class="w-100 bg-white" id="comment">
+                    <ul class="list-unstyled" id="commentUser">
+                      <li id="commentItem">
+                        <div class="user" id="userAvatar">
+                          <img src="../images/04-mag-page/user01.jpg" alt="parsa website user picture" id="userImage"
+                            class="img-thumbnail">
+                          <strong><a href="#" class="text-decoration-none t-16" id="userName">نام کاربری</a></strong>
+                        </div>
+                        <p class="py-2">
+                          <blockquote class="t-justify pe-lg-5 pe-1">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                          </blockquote>
+                        </p>
+                        <i class="d-block bx bx-heart text-start bx-xs text-green"></i>
+                      </li>
+                      <ul class="list-unstyled my-4 me-lg-5 pe-1" id="replay">
+                        <li id="replay-item">
+                          <div class="user" id="userAvatar">
+                            <img src="../images/04-mag-page/user02.jpg" alt="parsa website user picture" id="userImage"
+                              class="img-thumbnail">
+                            <strong><a href="#" class="text-decoration-none t-16" id="userName">نام کاربری</a></strong>
+                          </div>
+                          <p class="py-2">
+                            <blockquote class="t-justify pe-lg-5 pe-0 ">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                              است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                            </blockquote>
+                          </p>
+                          <i class="d-block bx bx-heart text-start bx-xs text-green"></i>
+                        </li>
+                      </ul>
+                    </ul>
+                    <button type="button" class="btn bg-green border-0 text-white btn-replay">پاسخ</button>
+                  </section>
+                  <section class="send-message">
+                    <h3 class="h4 text-dark h5">نظرات خود را با ما در میان بگذارید</h3>
+                    <form action="">
+                      <div class="form-floating box-message">
+                        <textarea class="form-control" placeholder="نوشته خود را اینجا وارد کنید" id="floatingTextarea2"
+                          style="height: 100px"></textarea>
+                        <label for="floatingTextarea2" class="t-14">نوشته خود را اینجا وارد کنید</label>
+                      </div>
+                      <button type="submit" class="mt-lg-5 mt-3 send-message bg-green text-white border-0 btn">ارسال
+                        نظر</button>
+                    </form>
+                  </section>
+                </section>
+              </div>
+            </div>
+          </section>
+          <!-- End Video Mag Structure Section -->
+        </div>
+      </div>
+      <!-- End Body Video Mag -->
+
+      <!-- *********************************************** -->
+
+      <!-- Start Footer Section -->
+      <footer id="footer" class="w-100 pt-5">
+        <section class="d-flex flex-column">
+          <div class="footer-content">
+            <div class="container-fluid">
+              <div class="row py-3 py-xl-5 py-md-4">
+                <div class="col-12 col-md-4 col-xl-2 my-4 my-xl-0 my-md-3">
+                  <img src="../images/logo/logo.jpg" alt="logo of parsa group company" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-8 col-xl-3 my-4 my-xl-0 my-md-3">
+                  <div class="d-flex flex-column align-items-start justify-content-center">
+                    <p class="t-14">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                      چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                      نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد .
+                    </p>
+                    <div class="d-flex ">
+                      <span>
+                        <i class='bx bxs-location-plus ms-2'></i>
+                      </span>
+                      <p>آدرس: پردیسان ، خیابان ایمان ، کوچه ششم ريا ، پلاک 10</p>
+                    </div>
+                    <div class="d-flex ">
+                      <span>
+                        <i class='bx bxs-phone'></i>
+                      </span>
+                      <p>شماره تماس: +989193339810</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 my-4 my-xl-0 my-md-3">
+                  <section class="d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <section class="list-footer me-0 me-md-3">
+                        <h6 class="text-green bold">لورم ایپسوم</h6>
+                        <ul class="list-unstyled px-0">
+                          <li><a href="#" class="text-decoration-none text-dark my-3 d-block">لورم ایپسوم</a></li>
+                          <li><a href="#" class="text-decoration-none text-dark my-3 d-block">لورم ایپسوم</a></li>
+                          <li><a href="#" class="text-decoration-none text-dark my-3 d-block">لورم ایپسوم</a></li>
+                        </ul>
+                      </section>
+                      <section class="list-footer me-0 me-md-3">
+                        <h6 class="text-green bold">لورم ایپسوم</h6>
+                        <ul class="list-unstyled px-0">
+                          <li><a href="#" class="text-decoration-none text-dark my-3 d-block">لورم ایپسوم</a></li>
+                          <li><a href="#" class="text-decoration-none text-dark my-3 d-block">لورم ایپسوم</a></li>
+                          <li><a href="#" class="text-decoration-none text-dark my-3 d-block">لورم ایپسوم</a></li>
+                        </ul>
+                      </section>
+                      <section class="list-footer me-0 me-md-3">
+                        <h6 class="text-green bold">لورم ایپسوم</h6>
+                        <ul class="list-unstyled px-0">
+                          <li><a href="#" class="text-decoration-none text-dark my-3 d-block">لورم ایپسوم</a></li>
+                          <li><a href="#" class="text-decoration-none text-dark my-3 d-block">لورم ایپسوم</a></li>
+                          <li><a href="#" class="text-decoration-none text-dark my-3 d-block">لورم ایپسوم</a></li>
+                        </ul>
+                      </section>
+                    </div>
+                    <div class="me-auto">
+                      <ul class="social-list d-flex list-unstyled flex-row-reverse justify-content-end">
+                        <li><a href="#" class="text-decoration-none"><i class='bx bxl-twitter bx-sm'></i></a></li>
+                        <li><a href="#" class="text-decoration-none"><i class='bx bxl-instagram bx-sm'></i></a></li>
+                        <li><a href="#" class="text-decoration-none"><i class='bx bxl-telegram bx-sm'></i></a></li>
+                        <li><a href="#" class="text-decoration-none"><i class='bx bxl-facebook-square bx-sm'></i></a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none"><i class='bx bx-mail-send bx-sm'></i></a></li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 my-4 my-xl-0 my-md-3">
+                  <section class="w-100 h-100 d-flex justify-content-center align-items-center map-img">
+                    <img src="../images/footer/map.jpg" alt="map address parasa company" class="img-fluid">
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright  col">
+            <p class="text-center py-3 px-2 px-md-0 t-14">تمام حقوق سایت متعلق به وب گرد است و هرگونه کپی برداری پیگرد
+              قانونی دارد .</p>
+          </div>
+        </section>
+      </footer>
+      <!-- End Footer Section -->
+    </main>
+    <!-- End Main -->
+
+    <!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Loader -->
+    <div id="loader">
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+    </div>
+
+    <!-- Start Vendor and JS File -->
+
+    <!-- jQuery -->
+    <script src="../../dist/vendor/js/jquery/jquery.js"></script>
+    <!-- Bootstrap Bundle -->
+    <script src="../../dist/vendor/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="../../dist/vendor/js/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Swiper -->
+    <script src="../../dist/vendor/js/swiper/swiper-bundle.min.js"></script>
+    <!-- Header.js -->
+    <script defer src="../../dist/js/header.js"></script>
+    <!-- All.js -->
+    <script defer src="../../dist/js/index.js"></script>
+    <!-- Slider.js -->
+    <script defer src="../../dist/js/slider.js"></script>
+    <!-- Button.js -->
+    <script defer src="../../dist/js/button.js"></script>
+    <!-- Video.js -->
+    <script defer src="../../dist/js/video.js"></script>
+    <!-- Loader.js -->
+    <script defer src="../../dist/js/loader.js"></script>
+    <script defer src="../../dist/js/search.js"></script>
+
+    <!-- End Vendor and JS File -->
+
+  </body>
+
+</html>

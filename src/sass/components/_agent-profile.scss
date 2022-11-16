@@ -1,0 +1,59 @@
+section#agentProfile {
+      padding-top: rem(200px);
+
+      @include mediaQueryMax(xl) {
+            margin-top: rem(200px);
+      }
+
+      article.agent-resume {
+            width: 100%;
+
+            @include mediaQuery(lg) {
+                  width: 60%;
+            }
+
+            @include radius(6px);
+            padding: rem(40px);
+
+      }
+
+      .agent-picture {
+            padding: rem(20px);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include mediaQuery(lg) {
+                  width: 70%;
+            }
+
+            .agent-img {
+                  source {
+                        @include radius(40px);
+                  }
+
+                  img {
+                        @include radius(40px);
+
+                  }
+
+                  &::after {
+                        content: "";
+                        display: block;
+                        background-color: transparent;
+                        border: rem(40px) solid #0ea2244a;
+                        opacity: .8;
+                        @include radius(80px);
+                        @include rotate(-45deg);
+                        width: 350px;
+                        height: 350px;
+                        position: absolute;
+                        z-index: -1;
+                        right: -100px;
+                        bottom: -60px;
+
+                  }
+            }
+      }
+}

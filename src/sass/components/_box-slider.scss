@@ -1,0 +1,101 @@
+.box-container {
+      position: relative;
+      z-index: 2;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      width: 350px;
+      height: 500px;
+      
+
+      @include mediaQuery(md) {
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            z-index: 2;
+
+      }
+
+      @include mediaQuery(lg) {
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+            z-index: 2;
+
+      }
+
+      .owl-prev-group,
+      .owl-next-group {
+            cursor: pointer;
+
+            &:hover {
+                  color: #00ff5e !important;
+                  @extend .transition-3;
+
+            }
+      }
+
+      .owl-nav {
+            margin-top: 30px;
+      }
+
+      .owl-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .owl-dot.active {
+                  span {
+                        background-color: #00ff5e !important;
+                  }
+            }
+      }
+
+      .bulet {
+            width: 8px;
+            height: 8px;
+
+            background-color: rgb(84, 93, 90);
+            @include radius(50%);
+            display: block;
+            margin: 0 rem(4px);
+      }
+
+      background-color: white;
+      @include radius(25px);
+      padding: rem(20px) rem(10px);
+      position: relative;
+
+      .box-slider {
+
+
+            max-width: 100%;
+
+            .owl-stage {
+                  width: 100%;
+
+                  .section {
+                        width: 100%;
+                        height: 80px !important;
+
+                        img {
+                              width: 65px !important;
+                              height: auto;
+                        }
+                  }
+
+                  .owl-item {
+                        cursor: pointer;
+                        width: 100%;
+                        height: 400px !important;
+
+                        .radius {
+                              @include radius(20px)
+                        }
+                  }
+            }
+      }
+
+
+
+
+}

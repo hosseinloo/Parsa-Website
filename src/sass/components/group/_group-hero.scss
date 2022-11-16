@@ -1,0 +1,394 @@
+section#groupHero {
+      min-height: 90vh;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      position: relative;
+
+      .group-back {
+            min-height: 70vh;
+            width: 90%;
+            background: url('../../public/images/01-group-page/group-hero.jpg') no-repeat center center/ cover;
+            border-top-right-radius: 150px;
+            border-bottom-right-radius: 20px;
+            position: relative;
+            z-index: 100;
+
+
+      }
+
+
+      div.hero {
+            height: 100%;
+            max-width: 100%;
+            background-color: green;
+            position: relative;
+      }
+
+      h2 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: absolute;
+            right: -20px;
+            top: 40%;
+            background-color: $white;
+            width: 240px;
+            height: 80px;
+            text-align: end;
+            padding: rem(10px) rem(30px);
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 4px;
+
+            @include mediaQueryMax(lg) {
+                  position: absolute;
+                  right: 240px;
+                  top: 110px;
+            }
+
+            @include mediaQueryMax(sm) {
+                  width: 180px;
+                  height: 60px;
+                  font-size: 16px;
+                  position: absolute;
+                  right: 0px;
+                  top: 110px;
+            }
+      }
+
+      .grid-group-shape {
+            display: grid;
+            grid-template-columns: repeat(6, 6px);
+            grid-template-rows: repeat(12, 6px);
+            position: absolute;
+            right: 20px;
+            top: 150px;
+            z-index: -1;
+
+            @include mediaQuery(sm) {
+                  grid-column-gap: 20px;
+                  grid-row-gap: 20px;
+
+
+            }
+
+            @include mediaQueryMax(xs) {
+                  grid-column-gap: 20px;
+                  grid-row-gap: 20px;
+            }
+
+            @include mediaQuery(xl) {
+                  grid-template-columns: repeat(6, 6px);
+                  grid-template-rows: repeat(12, 6px);
+            }
+
+
+            .div1 {
+                  grid-area: 1 / 1 / 2 / 2;
+            }
+
+            .div2 {
+                  grid-area: 1 / 2 / 2 / 3;
+            }
+
+            .div3 {
+                  grid-area: 1 / 3 / 2 / 4;
+            }
+
+            .div4 {
+                  grid-area: 1 / 4 / 2 / 5;
+            }
+
+            .div5 {
+                  grid-area: 1 / 5 / 2 / 6;
+            }
+
+            .div6 {
+                  grid-area: 1 / 6 / 2 / 7;
+            }
+
+            .div7 {
+                  grid-area: 2 / 1 / 3 / 2;
+            }
+
+            .div8 {
+                  grid-area: 2 / 2 / 3 / 3;
+            }
+
+            .div9 {
+                  grid-area: 2 / 3 / 3 / 4;
+            }
+
+            .div10 {
+                  grid-area: 2 / 4 / 3 / 5;
+            }
+
+            .div11 {
+                  grid-area: 2 / 5 / 3 / 6;
+            }
+
+            .div12 {
+                  grid-area: 2 / 6 / 3 / 7;
+            }
+
+            .div13 {
+                  grid-area: 3 / 1 / 4 / 2;
+            }
+
+            .div14 {
+                  grid-area: 3 / 2 / 4 / 3;
+            }
+
+            .div15 {
+                  grid-area: 3 / 3 / 4 / 4;
+            }
+
+            .div16 {
+                  grid-area: 3 / 4 / 4 / 5;
+            }
+
+            .div17 {
+                  grid-area: 3 / 5 / 4 / 6;
+            }
+
+            .div18 {
+                  grid-area: 3 / 6 / 4 / 7;
+            }
+
+            .div19 {
+                  grid-area: 4 / 1 / 5 / 2;
+            }
+
+            .div20 {
+                  grid-area: 4 / 2 / 5 / 3;
+            }
+
+            .div21 {
+                  grid-area: 4 / 3 / 5 / 4;
+            }
+
+            .div22 {
+                  grid-area: 4 / 4 / 5 / 5;
+            }
+
+            .div23 {
+                  grid-area: 4 / 5 / 5 / 6;
+            }
+
+            .div24 {
+                  grid-area: 4 / 6 / 5 / 7;
+            }
+
+            .div25 {
+                  grid-area: 5 / 1 / 6 / 2;
+            }
+
+            .div26 {
+                  grid-area: 5 / 2 / 6 / 3;
+            }
+
+            .div27 {
+                  grid-area: 5 / 3 / 6 / 4;
+            }
+
+            .div28 {
+                  grid-area: 5 / 4 / 6 / 5;
+            }
+
+            .div29 {
+                  grid-area: 5 / 5 / 6 / 6;
+            }
+
+            .div30 {
+                  grid-area: 5 / 6 / 6 / 7;
+            }
+
+            .div31 {
+                  grid-area: 6 / 1 / 7 / 2;
+            }
+
+            .div32 {
+                  grid-area: 6 / 2 / 7 / 3;
+            }
+
+            .div33 {
+                  grid-area: 6 / 3 / 7 / 4;
+            }
+
+            .div34 {
+                  grid-area: 6 / 4 / 7 / 5;
+            }
+
+            .div35 {
+                  grid-area: 6 / 5 / 7 / 6;
+            }
+
+            .div36 {
+                  grid-area: 6 / 6 / 7 / 7;
+            }
+
+            .div37 {
+                  grid-area: 7 / 1 / 8 / 2;
+            }
+
+            .div38 {
+                  grid-area: 7 / 2 / 8 / 3;
+            }
+
+            .div39 {
+                  grid-area: 7 / 3 / 8 / 4;
+            }
+
+            .div40 {
+                  grid-area: 7 / 4 / 8 / 5;
+            }
+
+            .div41 {
+                  grid-area: 7 / 5 / 8 / 6;
+            }
+
+            .div42 {
+                  grid-area: 7 / 6 / 8 / 7;
+            }
+
+            .div43 {
+                  grid-area: 8 / 1 / 9 / 2;
+            }
+
+            .div44 {
+                  grid-area: 8 / 2 / 9 / 3;
+            }
+
+            .div45 {
+                  grid-area: 8 / 3 / 9 / 4;
+            }
+
+            .div46 {
+                  grid-area: 8 / 4 / 9 / 5;
+            }
+
+            .div47 {
+                  grid-area: 8 / 5 / 9 / 6;
+            }
+
+            .div48 {
+                  grid-area: 8 / 6 / 9 / 7;
+            }
+
+            .div49 {
+                  grid-area: 9 / 1 / 10 / 2;
+            }
+
+            .div50 {
+                  grid-area: 9 / 2 / 10 / 3;
+            }
+
+            .div51 {
+                  grid-area: 9 / 3 / 10 / 4;
+            }
+
+            .div52 {
+                  grid-area: 9 / 4 / 10 / 5;
+            }
+
+            .div53 {
+                  grid-area: 9 / 5 / 10 / 6;
+            }
+
+            .div54 {
+                  grid-area: 9 / 6 / 10 / 7;
+            }
+
+            .div55 {
+                  grid-area: 10 / 1 / 11 / 2;
+            }
+
+            .div56 {
+                  grid-area: 10 / 2 / 11 / 3;
+            }
+
+            .div57 {
+                  grid-area: 10 / 3 / 11 / 4;
+            }
+
+            .div58 {
+                  grid-area: 10 / 4 / 11 / 5;
+            }
+
+            .div59 {
+                  grid-area: 10 / 5 / 11 / 6;
+            }
+
+            .div60 {
+                  grid-area: 10 / 6 / 11 / 7;
+            }
+
+            .div61 {
+                  grid-area: 11 / 1 / 12 / 2;
+            }
+
+            .div62 {
+                  grid-area: 11 / 2 / 12 / 3;
+            }
+
+            .div63 {
+                  grid-area: 11 / 3 / 12 / 4;
+            }
+
+            .div64 {
+                  grid-area: 11 / 4 / 12 / 5;
+            }
+
+            .div65 {
+                  grid-area: 11 / 5 / 12 / 6;
+            }
+
+            .div66 {
+                  grid-area: 11 / 6 / 12 / 7;
+            }
+
+            .div67 {
+                  grid-area: 12 / 1 / 13 / 2;
+            }
+
+            .div68 {
+                  grid-area: 12 / 2 / 13 / 3;
+            }
+
+            .div69 {
+                  grid-area: 12 / 3 / 13 / 4;
+            }
+
+            .div70 {
+                  grid-area: 12 / 4 / 13 / 5;
+            }
+
+            .div71 {
+                  grid-area: 12 / 5 / 13 / 6;
+            }
+
+            .div72 {
+                  grid-area: 12 / 6 / 13 / 7;
+            }
+      }
+
+      .circle {
+            width: 4px;
+            height: 4px;
+            background-color: $primary-color;
+            opacity: .5;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border: 1px solid $primary-color;
+
+            @include mediaQuery(xl) {
+                  width: 6px;
+                  height: 6px;
+            }
+
+      }
+}

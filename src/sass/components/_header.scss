@@ -1,0 +1,187 @@
+header#header {
+      overflow-x: hidden;
+      max-width: 100%;
+      .search-container {
+            form {
+                  position: absolute;
+                  bottom: 0;
+                  left: 135px;
+                  input {
+                        width: 230px;
+                  }
+            }
+      }
+      .search-form {
+            color: #014e1abf;
+            display: none;
+            @include radius(10px);
+            border: 1px solid $primary-color !important;
+            &::placeholder {
+                  color: #014e1abf;
+            }
+            &:focus {
+                  
+                  box-shadow: 0 0 8px #009b31db !important;
+                  
+            }
+
+      }
+
+      // Logo Style
+      a.navbar-brand {
+            margin-right: 0px !important;
+
+            img {
+                  width: rem(100px);
+
+                  @include mediaQuery(lg) {
+                        max-width: 100%;
+                  }
+            }
+      }
+
+      nav.navbar {
+            height: 100px;
+            // background: linear-gradient(120deg , #ffffff  , #ffffff) !important;
+
+
+
+      }
+
+      // Burger Menu Style
+      div#burger {
+
+            @include mediaQuery(lg) {
+                  display: none !important;
+            }
+      }
+
+
+      // SideBar Menu Style
+      .offcanvas {
+            @include mediaQuery(lg) {
+                  display: none;
+            }
+
+            .offcanvas-header {
+                  img {
+                        width: rem(100px);
+
+                        @include mediaQuery(lg) {
+                              max-width: 100%;
+                        }
+                  }
+            }
+      }
+
+
+
+      // UL in Header for navigation style
+      ul.navbar-nav {
+            a.nav-link.active-menu {
+                  @extend .text-green;
+                  transition: all .4s linear;
+                  -webkit-transition: all .4s linear;
+                  -moz-transition: all .4s linear;
+                  -ms-transition: all .4s linear;
+                  -o-transition: all .4s linear;
+
+                  &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: -1px;
+                        height: 2px;
+                        background-color: $primary-color;
+                        display: inline-block;
+                        transition: all .4s linear;
+                        -webkit-transition: all .4s linear;
+                        -moz-transition: all .4s linear;
+                        -ms-transition: all .4s linear;
+                        -o-transition: all .4s linear;
+                  }
+
+            }
+
+            a.nav-link {
+
+                  &:hover {
+                        @extend.text-green;
+                        transition: all .4s linear;
+                        -webkit-transition: all .4s linear;
+                        -moz-transition: all .4s linear;
+                        -ms-transition: all .4s linear;
+                        -o-transition: all .4s linear;
+
+                  }
+
+            }
+
+            ul.drop-nav {
+                  border-color: $primary-color;
+                  text-align: start;
+
+                  a {
+                        color: $primary-color;
+
+                        &:hover {
+                              background-color: $primary-color;
+                              color: $white;
+                              transition: all .4s linear;
+                              -webkit-transition: all .4s linear;
+                              -moz-transition: all .4s linear;
+                              -ms-transition: all .4s linear;
+                              -o-transition: all .4s linear;
+                        }
+                  }
+            }
+      }
+
+      ul.navbar-nav.navigation-menu {
+            display: none;
+            padding: 0 0;
+
+            @include mediaQuery(lg) {
+                  display: flex;
+                  flex-direction: row;
+
+                  li {
+                        margin: 0 10px;
+
+                        @include mediaQuery(xl) {
+                              margin: 0 20px;
+                        }
+
+                  }
+
+
+                  a {
+                        position: relative;
+
+                        &:hover {
+                              transition: all .4s linear;
+
+                        }
+                  }
+
+            }
+      }
+
+      section.sales-advisor {
+
+            a {
+                  color: $primary-color !important;
+
+                  padding-bottom: 2px;
+                  border-bottom: 2px dotted $primary-color;
+
+                  &:hover {
+                        color: #07190d !important;
+                        border-bottom: 2px dotted #063616;
+
+                        @extend .transition-3;
+                  }
+            }
+      }
+}

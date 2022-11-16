@@ -1,0 +1,152 @@
+section.subset {
+      padding: rem(50px) 0;
+
+      @include mediaQuery(lg) {
+            padding-top: rem(150px);
+
+      }
+
+      overflow-x: hidden;
+      max-width: 100%;
+      // min-height: 100vh;
+
+      .subset-img-container {
+            img {
+                  margin-right: rem(-40px);
+            }
+      }
+
+      .subset-content {
+            margin-right: rem(-150px);
+
+            .slider {
+                  display: flex;
+                  flex-wrap: nowrap;
+
+                  margin-top: rem(50px);
+                  margin-bottom: rem(100px);
+
+                  img {
+                        margin-bottom: rem(20px);
+                        width: 50px;
+                  }
+
+                  p {
+                        font-size: rem(14px);
+                        margin: rem(20px) 0;
+                        color: rgb(116, 118, 117);
+                  }
+
+                  em {
+                        font-size: rem(14px);
+                        @extend .text-purple;
+                  }
+
+                  h6 {
+                        font-weight: bold;
+                  }
+
+                  .icon {
+                        background-color: transparent;
+                        width: 30px;
+                        height: 30px;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid $complement-color !important;
+                        cursor: pointer;
+                        @include radius(5px);
+
+                        &:hover {
+                              @extend .transition-3;
+                              background-color: $complement-color;
+
+                              i {
+                                    color: white !important;
+
+                              }
+
+                        }
+
+                        i {
+                              display: inline-block;
+                              color: $complement-color !important;
+                              @include rotate(45deg)
+                        }
+                  }
+
+
+                  .card-slider {
+                        width: 330px !important;
+                        height: 400px !important;
+                        cursor: pointer;
+                        @extend .transition-3;
+
+                        &:hover {
+                              box-shadow: 3px 3px 6px rgba(145, 152, 148, 0.51);
+
+                              h6 {
+                                    color: $complement-color;
+                                    @extend .transition-3;
+
+                              }
+
+                              .icon {
+                                    @extend .transition-3;
+                                    background-color: $complement-color;
+
+                                    i {
+                                          color: white !important;
+
+                                    }
+
+                              }
+
+
+                        }
+
+                        background-color: #ffffff;
+                        min-width: rem(300px);
+
+                        margin: 0 rem(10px);
+                        padding: 25px 30px;
+                        border-radius: 20px;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        -ms-border-radius: 20px;
+                        -o-border-radius: 20px;
+                  }
+            }
+      }
+
+      .owl-carousel,
+      .owl-stage-router,
+      .owl-stage {
+            z-index: 1000;
+      }
+
+}
+
+.image-sub-background {
+      min-height: 80vh;
+      width: 100%;
+      position: absolute;
+      right: 0;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 120px;
+      background: url('../../public/images/subset/subset.jpg') no-repeat center center/ cover;
+
+      @include mediaQuery(md) {
+            width: 50%;
+      }
+}
+
+.sub-slider {
+      margin-top: 10px !important;
+      margin-bottom: 0 !important;
+}
+
+.swiper-container {
+      margin-top: 40px;
+}

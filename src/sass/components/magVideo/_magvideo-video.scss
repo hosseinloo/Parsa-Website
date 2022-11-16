@@ -1,0 +1,79 @@
+main#parsaMagVideo {
+      .video-container {
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .video-player {
+                  border-radius: 5px 150px 10px 5px !important;
+                  -webkit-border-radius: 5px 150px 10px 5px !important;
+                  -moz-border-radius: 5px 150px 10px 5px !important;
+                  -ms-border-radius: 5px 150px 10px 5px !important;
+                  -o-border-radius: 5px 150px 10px 5px !important;
+            }
+
+            video {
+                  position: relative;
+                  width: 100%;
+                  height: auto;
+                  border-radius: 40px;
+                  -webkit-border-radius: 40px;
+                  -moz-border-radius: 40px;
+                  -ms-border-radius: 40px;
+                  -o-border-radius: 40px;
+            }
+
+            .video-title {
+                  position: absolute;
+                  top: 40px;
+                  right: 140px;
+                  z-index: 900;
+                  color: $white;
+
+            }
+
+            .video-icon {
+
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  margin-left: rem(-32.5px);
+                  margin-top: rem(-32.5px);
+                  background-color: rgba(241, 255, 246, 0.755);
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+                  height: rem(65px);
+                  width: rem(65px);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  cursor: pointer;
+                  border: none;
+
+                  i {
+                        display: flex;
+                        align-self: center;
+                        margin-right: rem(-8px);
+                        color: $complement-color !important;
+                  }
+
+                  &:hover {
+                        transition: all .3s linear;
+                        -webkit-transition: all .3s linear;
+                        -moz-transition: all .3s linear;
+                        -ms-transition: all .3s linear;
+                        -o-transition: all .3s linear;
+                        background-color: $complement-color;
+
+                        i {
+                              color: rgba(241, 255, 246, 0.755) !important;
+                        }
+                  }
+            }
+      }
+}

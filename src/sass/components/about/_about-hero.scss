@@ -1,0 +1,52 @@
+section#mainHero {
+      .about-hero {
+            background: url('../../public/images/10-about-page/factory-structure.jpg') no-repeat center center/ cover;
+            min-height: 80vh;
+            margin-top: rem(150px);
+
+            @include radius(10px);
+            border-top-right-radius: rem(120px) !important;
+            position: relative;
+
+            .brand-logo {
+                  width: 190px;
+                  height: 150px;
+
+                  img {
+                        max-width: 80%;
+                        height: auto;
+                  }
+
+                  @include mediaQuery(md) {
+                        width: 290px;
+                        height: 220px;
+
+                  }
+
+                  background-color: rgb(255, 255, 255);
+                  position: absolute;
+                  left: 20px;
+                  top: -60px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  @include radius(5px);
+
+                  border-bottom-right-radius: 50px !important;
+
+                  @include mediaQuery(xl) {
+                        left: 150px;
+                  }
+
+                  img {
+                        border-bottom-right-radius: 0px !important;
+
+                  }
+
+            }
+
+            .brand-body {
+                  border-bottom-left-radius: 60px !important;
+            }
+      }
+}

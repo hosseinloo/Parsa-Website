@@ -1,0 +1,211 @@
+main#parsaMagPodcast {
+
+      section.podcast {
+            article.podcast-header {
+
+                  position: relative;
+
+                  h6 {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 50%;
+                        background-color: rgba(20, 5, 17, 0.748);
+                        color: white;
+                        padding: rem(15px) 0;
+                        height: auto;
+                        width: 220px;
+                        margin-left: rem(-110px);
+                        text-align: center;
+
+                        border-radius: 20px;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        -ms-border-radius: 20px;
+                        -o-border-radius: 20px;
+                  }
+
+                  img {
+                        width: 100% !important;
+                        height: auto;
+                        border-radius: 20px;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        -ms-border-radius: 20px;
+                        -o-border-radius: 20px;
+                        border-top-right-radius: 180px;
+                  }
+            }
+
+            article.podcast-player {
+                  background-color: $complement-color;
+                  color: $white;
+                  width: 100%;
+                  padding: rem(30px) rem(24px);
+                  border-radius: 35px;
+                  -webkit-border-radius: 35px;
+                  -moz-border-radius: 35px;
+                  -ms-border-radius: 35px;
+                  -o-border-radius: 35px;
+
+                  .podcast-timer {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                  }
+
+                  form {
+                        input[type="range"] {
+                              -webkit-appearance: none;
+
+                              width: 100%;
+                              margin: rem(5px) auto;
+                              height: 6px;
+                              background: $gray;
+                              border-radius: 5px;
+                              background-image: linear-gradient($white, $white);
+                              background-size: 70% 100%;
+                              background-repeat: no-repeat;
+                        }
+
+                        input[type="range"]::-webkit-slider-thumb {
+                              -webkit-appearance: none;
+                              height: 14px;
+                              width: 14px;
+                              border-radius: 50%;
+                              background: $white;
+                              cursor: ew-resize;
+                              box-shadow: 0 0 2px 0 #555;
+                              transition: background .3s ease-in-out;
+                        }
+
+                        input[type=range]::-webkit-slider-runnable-track {
+                              -webkit-appearance: none;
+                              box-shadow: none;
+                              border: none;
+                              background: transparent;
+                        }
+                  }
+
+                  section.icon-podcast-player {
+                        margin-top: rem(15px);
+
+                        ul {
+
+                              i.activate {
+                                    color: white;
+                              }
+
+                              i {
+                                    color: rgba(144, 147, 145, 0.7);
+                                    cursor: pointer;
+
+                                    &:hover {
+                                          color: $white !important;
+                                          transition: all .3s;
+                                          -webkit-transition: all .3s;
+                                          -moz-transition: all .3s;
+                                          -ms-transition: all .3s;
+                                          -o-transition: all .3s;
+                                    }
+
+                              }
+                        }
+                  }
+
+            }
+
+            article.podcast-download {
+                  background-color: $complement-color;
+                  color: $white;
+                  width: 100%;
+
+                  padding: rem(30px) rem(16px);
+                  border-radius: 35px;
+                  -webkit-border-radius: 35px;
+                  -moz-border-radius: 35px;
+                  -ms-border-radius: 35px;
+                  -o-border-radius: 35px;
+
+                  .download-list-container {
+                        max-height: 200px;
+                        overflow-y: scroll;
+                        direction: ltr;
+
+                        /* width */
+                        &::-webkit-scrollbar {
+                              width: 10px;
+
+
+                        }
+
+                        /* Track */
+                        &::-webkit-scrollbar-track {
+                              background: rgba(235, 235, 235, 0.755);
+                              border-radius: 20px;
+                              -webkit-border-radius: 20px;
+                              -moz-border-radius: 20px;
+                              -ms-border-radius: 20px;
+                              -o-border-radius: 20px;
+                        }
+
+                        /* Handle */
+                        &::-webkit-scrollbar-thumb {
+                              background: #00f375;
+                              height: 50px !important;
+                              border-radius: 20px;
+                              -webkit-border-radius: 20px;
+                              -moz-border-radius: 20px;
+                              -ms-border-radius: 20px;
+                              -o-border-radius: 20px;
+                        }
+
+                        /* Handle on hover */
+                        &::-webkit-scrollbar-thumb:hover {
+                              background: #00f375;
+                        }
+
+                  }
+
+                  .download-list {
+                        margin-bottom: rem(15px);
+                        margin-top: rem(10px);
+                  }
+
+                  .pod-name {
+
+                        p,
+                        i {
+                              cursor: pointer;
+
+                              &:hover {
+                                    color: #00f375 !important;
+                                    transition: all .3s;
+                                    -webkit-transition: all .3s;
+                                    -moz-transition: all .3s;
+                                    -ms-transition: all .3s;
+                                    -o-transition: all .3s;
+                              }
+                        }
+                  }
+
+                  .pod-download {
+                        i {
+                              cursor: pointer;
+
+                              &:hover {
+                                    color: #00f375 !important;
+                                    transition: all .3s;
+                                    -webkit-transition: all .3s;
+                                    -moz-transition: all .3s;
+                                    -ms-transition: all .3s;
+                                    -o-transition: all .3s;
+                              }
+                        }
+                  }
+
+            }
+
+
+      }
+
+}

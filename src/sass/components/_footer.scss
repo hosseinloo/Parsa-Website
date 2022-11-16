@@ -1,0 +1,39 @@
+footer#footer {
+
+      .footer-copyright {
+            padding: 0 rem(20px);
+            background: linear-gradient(90deg, #e6e6e6d9 5%, #c9d8d3dc);
+
+            p {
+                  margin-bottom: 0px;
+            }
+      }
+
+      .list-footer {
+            ul li {
+                  text-align: center;
+            }
+      }
+
+      .social-list {
+            margin-top: rem(30px);
+
+            li {
+                  margin-right: rem(15px);
+            }
+
+            a {
+                  text-decoration: none;
+                  display: block;
+                  @extend .text-green;
+            }
+      }
+
+      .map-img {
+            img {
+                  border-top-right-radius: rem(40px);
+                  border-bottom-right-radius: rem(10px);
+            }
+      }
+
+}

@@ -1,0 +1,105 @@
+main#parsaMagVideo {
+      .margin-top {
+            @include mediaQuery(lg) {
+                  padding-top: 150px !important;
+
+            }
+      }
+
+      aside#sidebarTitle {
+            .mag-box {
+                  display: grid;
+                  grid-template-columns: 1fr;
+                  grid-template-rows: repeat(3, 1fr);
+                  grid-gap: 50px 0;
+
+
+                  .box {
+                        max-width: 80%;
+                        margin: rem(0px) auto;
+
+                        .box-img {
+                              position: relative;
+                              max-width: 100%;
+                        }
+
+                        img {
+                              border-radius: 36px;
+                              -webkit-border-radius: 36px;
+                              -moz-border-radius: 36px;
+                              -ms-border-radius: 36px;
+                              -o-border-radius: 36px;
+                        }
+
+                        .box-info {
+                              border-bottom-left-radius: 36px;
+                              border-bottom-right-radius: 36px;
+                              position: absolute;
+                              height: auto;
+
+                              max-width: 100%;
+                              padding: 0 rem(10px);
+
+                              left: 0;
+                              bottom: 0 !important;
+                              right: 0;
+                              background-color: rgba(17, 20, 18, 0.673);
+                        }
+
+                        .box-icon {
+                              flex-basis: 20%;
+                              align-self: flex-end;
+                              max-width: rem(30px);
+                              max-height: rem(30px);
+                              border: 1px solid #00f375;
+                              display: inline-block;
+                              padding: 3px;
+                              border-radius: 7px;
+                              -webkit-border-radius: 7px;
+                              -moz-border-radius: 7px;
+                              -ms-border-radius: 7px;
+                              -o-border-radius: 7px;
+                              margin-right: rem(10px);
+
+                              &:hover {
+                                    background-color: #00f375;
+                                    transition: all .3s linear;
+                              }
+
+                        }
+
+                        .box-title {
+                              font-size: rem(18px);
+                              color: $white;
+                              padding-top: rem(15px);
+                              margin-bottom: rem(0px) !important;
+                        }
+
+                        .box-body {
+                              display: flex;
+                              padding: rem(20px) 0;
+
+                              p {
+                                    &:first-child {
+                                          flex-basis: 80%;
+                                    }
+
+                                    &:last-child {
+                                          text-align: center;
+
+                                          i {
+                                                color: $white;
+                                                transform: rotate(45deg);
+                                                -webkit-transform: rotate(45deg);
+                                                -moz-transform: rotate(45deg);
+                                                -ms-transform: rotate(45deg);
+                                                -o-transform: rotate(45deg);
+                                          }
+                                    }
+                              }
+                        }
+                  }
+
+            }
+      }
+}

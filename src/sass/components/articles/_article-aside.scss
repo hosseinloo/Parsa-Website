@@ -1,0 +1,72 @@
+main.articles-main {
+      aside.sidebar {
+            min-height: 100vh;
+
+            h6 {
+                  font-weight: 600;
+            }
+
+            ul.list-article {
+                  list-style-type: none;
+
+                  a {
+                        @extend .t-14;
+                        text-decoration: none;
+                        color: $black;
+                        padding-bottom: rem(14px);
+                        display: block;
+
+                        ul {
+                              list-style-type: none;
+                        }
+
+                        position: relative;
+
+                        &::before {
+                              content: "";
+                              display: block;
+                              width: 5px;
+                              height: 5px;
+                              border: 5px solid transparent;
+                              border-right-color: $black;
+                              position: absolute;
+                              top: 7px;
+                              right: -12px;
+                        }
+
+                        &:hover {
+                              color: $primary-color;
+                              transition: all .3s linear;
+                              -webkit-transition: all .3s linear;
+                              -moz-transition: all .3s linear;
+                              -ms-transition: all .3s linear;
+                              -o-transition: all .3s linear;
+
+                              &::before {
+                                    border-right-color: $primary-color;
+                              }
+                        }
+                  }
+
+
+            }
+
+            input.check-green {
+                  &:checked {
+                        color: $primary-color !important;
+                        background-color: $primary-color !important;
+                  }
+
+
+            }
+
+            span.arrow-down {
+                  display: inline;
+                  width: 5px;
+                  height: 5px;
+                  border: 5px solid transparent;
+                  border-top-color: $black;
+
+            }
+      }
+}

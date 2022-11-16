@@ -1,0 +1,18 @@
+main.articles-main {
+      .article-title {
+            min-height: 35vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            flex-direction: column;
+
+            h2 {
+                  padding-right: 0;
+
+                  @include mediaQuery(lg) {
+                        padding-right: rem(80px);
+                  }
+            }
+
+      }
+}

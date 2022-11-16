@@ -1,0 +1,22 @@
+section#mainHero {
+      .brand-hero {
+            background: url('../../public/images/05-brand-page/brand-background.jpg') no-repeat center center/ cover !important;
+
+            .brand-logo {
+                  width: 250px;
+                  height: auto;
+                  position: absolute;
+                  left: 20px;
+                  top: -40px;
+
+                  @include mediaQuery(xl) {
+                        left: 150px;
+                  }
+
+                  img {
+                        border-bottom-right-radius: 30px !important;
+                  }
+
+            }
+      }
+}
